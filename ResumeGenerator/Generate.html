@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav id="nav" style="background-color:rgb(112, 112, 236) ;" class="  navbar navbar-expand-lg ">
+        <div class="container ">
+            <img src="./assest/icons8-s-50 (3).png" alt="" style="margin: 0%;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-end   collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav text-white">
+                    <li class="nav-item px-5">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link active text-white" href="index.html">Features</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link active text-white" href="Generate.html">Generate Resume</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+
+    
+    <section class="container" id="resume">
+        <h1 class="text-center mt-3">
+            Start Generatinig your resume<img src="./assest/resume-card.webp" class="img-fluid" alt="..."
+                style="height: 60px; width: 55px; margin-left: 10px;">
+        </h1>
+        <hr>
+      
+        <div class="row">
+            <div class="col-md-6">
+                <h3 style="color: brown;" class="display-6">Personal Information</h3>
+
+                <div class="form-group mt-3">
+                    <label for="name">Enter your name</label>
+                    <input type="text" name="" placeholder="Enter your name" id="name" class="form-control mt-2"
+                        required>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="objective">Objective</label>
+                    <textarea placeholder="Enter your Objective" id="objective" class="form-control mt-2"
+                        required></textarea>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="number">Enter your Contact number</label>
+                    <input type="text" name="" placeholder="Enter your number" id="number" class="form-control mt-2"
+                        required>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="name">Enter your Address</label>
+                    <textarea placeholder="Enter your address" id="Eaddress" class="form-control mt-2"
+                        required></textarea>
+                </div>
+
+
+
+                <p style="color: brown;" class=" mt-3">Important Links*</p>
+
+                <div class="form-group mt-3">
+                    <label for="linkedin" style="color:rgb(50, 50, 242);"><i
+                            class="fa-brands fa-linkedin px-2"></i>Linkedin</label>
+                    <input type="text" name="" placeholder="Insert here" id="linkedin" class="form-control mt-2"
+                        required>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="github" style="color:rgb(57, 3, 33);"><i
+                            class="fa-brands fa-github px-2"></i>Github</label>
+                    <input type="text" name="" placeholder="Insert here" id="github" class="form-control mt-2" required>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="skill">Soft Skills</label>
+                    <input type="text" name="" placeholder="Soft Skills" id="softSkills" class="form-control mt-2"
+                        required>
+                </div>
+
+
+            </div>
+            <div class="col-md-6">
+                <h3 style="color: brown;" class="display-6">Professional Information</h3>
+                <hr>
+                <div class="form-group mt-3">
+                    <label for="name">Job Title</label>
+                    <input type="text" name="" placeholder="Enter your job title" id="jname" class="form-control mt-2"
+                        required>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="skill">Technical Skills</label>
+                    <input  type="text" name="" placeholder="eg: java,python,c++..." id="Tskill"
+                        class="form-control mt-2" required>
+                </div>
+
+
+
+
+
+
+                <div class="form-group mt-3 " id="projects">
+                    <label for="project"> Add your Work experience</label>
+
+                    <textarea placeholder="Describe your project in brief " class="form-control mt-2 proField"
+                        required></textarea>
+
+                    <button id="pbtn" onclick="addnewProject()" class="btn mt-2 text-white"
+                        style="background-color:rgb(112, 112, 236) ;" href="">Add more</button>
+                </div>
+
+
+
+                <div class="form-group mt-3 " id="we">
+                    <label for="">Add your projects</label>
+
+                    <textarea placeholder="write about your work experience in brief  "
+                        class="form-control mt-2 weField" required></textarea>
+
+                    <button id="wbtn" onclick="addnewAcad()" class="btn mt-2 text-white"
+                        style="background-color:rgb(112, 112, 236) ;" href="">Add more</button>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="text-center">
+            <button  onclick="genCV()" id="generate" class="btn mt-2 fs-5 text-white"
+                style="background-color:rgb(112, 112, 236) ;" href="">Generate CV</button>
+
+        </div>
+   
+    </section>
+
+    <!-- CV templet -->
+    <div  class="container-fluid py-2" id="resume-templet">
+        <h1 class="text-center" id="Tname">Shubham Motwani</h1>
+        <h5 id="Tjobtitle" class="text-center" style="color: rgb(84, 84, 250);">Software Developer</h5>
+        <div class="row">
+            <!-- first col -->
+            <div class="first col-md-8 mt-1">
+                <div>
+                    <h4>Objective</h4>
+                    <hr>
+                    <p id="Tobjective">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum veniam
+                        officiis quis
+                        facere at, sapiente voluptas itaque quibusdam atque non quasi pariatur facilis voluptates
+                        aspernatur quisquam fugit. Veritatis, cum!</p>
+                </div>
+
+                <div class="  mt-1">
+                    <div class=" ">
+                        <h4>Work Experience</h4>
+                    </div>
+
+                    <hr>
+                    <div class="">
+
+                        <ul id="projectsT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur
+                                consequatur, perspiciatis nihil commodi at necessitatibus ullam vel iste illo voluptatem
+                                doloribus sit veritatis exercitationem accusantium! Ut inventore cum harum.</li>
+                      
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur
+                                        consequatur, perspiciatis nihil commodi at necessitatibus ullam vel iste illo voluptatem
+                                        doloribus sit veritatis exercitationem accusantium! Ut inventore cum harum.</li>
+                                  
+                            </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="mt-1">
+                    <div class="">
+                        <h4>Projects</h4>
+                    </div>
+
+                    <hr>
+                    <div class="">
+
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur
+                                consequatur, perspiciatis nihil commodi at necessitatibus ullam vel iste illo voluptatem
+                                doloribus sit veritatis exercitationem accusantium! Ut inventore cum harum.</li>
+                      
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur
+                                    consequatur, perspiciatis nihil commodi at necessitatibus ullam vel iste illo voluptatem
+                                    doloribus sit veritatis exercitationem accusantium! Ut inventore cum harum.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur
+                                        consequatur, perspiciatis nihil commodi at necessitatibus ullam vel iste illo voluptatem
+                                        doloribus sit veritatis exercitationem accusantium! Ut inventore cum harum.</li>
+                                  
+                            </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- second col -->
+            <div  class="  col-md-4 mt-1">
+
+                <div >
+                    <h4> Skills:-</h4>
+                    <hr>
+                    <b>Technical Skills</b>
+                    <p id="Ttskills"> Java, C++</p>
+                    <b>Soft Skills</b>
+                    <p id="Tsoftskills"> Java, C++</p>
+                </div>
+
+                <div class="mt-1">
+                    <h4>Contact Info</h4>
+                    <hr>
+                
+
+                    <div>
+                        <b><i class="fa-solid fa-phone px-1"></i>Number: </b>
+                        <a id="Tnumber"> +9112346</a>
+                    </div>
+
+                    <div>
+                        <b><i class="fa-brands fa-github px-1"></i>Github: </b>
+                        <a href="" id="git">git.com</a>
+                    </div>
+
+                    <div>
+                        <b> <i class="fa-brands fa-linkedin px-1"></i>Linkedin: </b>
+                        <a href="#" id="linkd">linkedin.com</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="mt-1">
+                    <h4>Address</h4>
+                    <hr>
+                    <p id="address">Kali pahadi ke piche </p>
+                </div>
+            </div>
+            <div class="text-center">
+                <button onclick="printCV()" id="generate" class="btn mt-2 fs-5 text-white"
+                    style="background-color:rgb(112, 112, 236) ;" href="">Print CV</button>
+    
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

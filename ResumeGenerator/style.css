@@ -1,0 +1,86 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 767px) {
+   .main{
+    display: block;
+
+   }
+  }
+
+  .card {
+   color: aquamarine;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.text{
+ font-size: 450%;
+}
+.footer{
+    margin-top: 20px;
+   
+    background-color:darkslategray;
+    
+}
+.ftext{
+    text-decoration: none;
+    color: white;
+}
+.contains{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.insta:hover{
+    color: rgb(234, 70, 97);
+}
+.whats:hover{
+    color: rgb(43, 220, 43);
+}
+.linkd:hover{
+    color: rgb(86, 86, 237);
+}
+
+
+@media screen and (max-width: 767px) {
+    .contains{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: block;
+        /* justify-content: space-around; */
+    }
+    .quick{
+        padding-top: 15px;
+    }
+    .follow{
+        padding-top: 15px;
+    }
+   }
+
+   /* #resume{
+    display: none;
+   } */
+
+   /* .first{
+    border-right: 1px solid black;
+   } */
+
+   #resume-templet{
+    display: none;
+   }
